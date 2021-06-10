@@ -1,3 +1,5 @@
+_**Note** : The below model is deployed on https://creditcard-lead-prediction.herokuapp.com/ _
+
 # Credit Card Lead Prediction
 Happy Customer Bank is a mid-sized private bank that deals in all kinds of banking products, like Savings accounts, Current accounts, investment products, credit products, among other offerings.
 
@@ -67,4 +69,3 @@ Variable Definition
 **Avg_Account_Balance**: Average Account Balance for the Customer in last 12 Months
 
 **Is_Active**: If the Customer is Active in last 3 Months
-
