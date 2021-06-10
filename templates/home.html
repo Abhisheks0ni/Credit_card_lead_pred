@@ -1,0 +1,106 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<h3>Customer's interest score towards buying credit card prediction</h3>
+	 <br>
+	 <br>
+
+<div>
+<form action="/result" method="POST">
+    <label for="Gender">Gender</label>
+	<select id="Gender" name="Gender">
+	<option value="Male">Male</option>
+	<option value="Female">Female</option>
+	</select>
+	<br>
+	<label for="Age">Age (0-100)</label>
+	<input type="text" id="Age" name="Age">
+	<br>
+	<label for="Region_code">Region_Code</label>
+	<select id="Region_code" name="Region_Code">
+	<option value="RG250">RG250</option>
+	<option value="RG251">RG251</option>
+	<option value="RG252">RG252</option>
+	<option value="RG253">RG253</option>
+	<option value="RG254">RG254</option>
+	<option value="RG255">RG255</option>
+	<option value="RG256">RG256</option>
+	<option value="RG257">RG257</option>
+	<option value="RG258">RG258</option>
+	<option value="RG259">RG259</option>
+	<option value="RG260">RG260</option>
+	<option value="RG261">RG261</option>
+	<option value="RG262">RG262</option>
+	<option value="RG263">RG263</option>
+	<option value="RG264">RG264</option>
+	<option value="RG265">RG265</option>
+	<option value="RG266">RG266</option>
+	<option value="RG267">RG267</option>
+	<option value="RG268">RG268</option>
+	<option value="RG269">RG269</option>
+	<option value="RG270">RG270</option>
+	<option value="RG271">RG271</option>
+	<option value="RG272">RG272</option>
+	<option value="RG273">RG273</option>
+	<option value="RG274">RG274</option>
+	<option value="RG275">RG275</option>
+	<option value="RG276">RG276</option>
+	<option value="RG277">RG277</option>
+	<option value="RG278">RG278</option>
+	<option value="RG279">RG279</option>
+	<option value="RG280">RG280</option>
+	<option value="RG281">RG281</option>
+	<option value="RG282">RG282</option>
+	<option value="RG283">RG283</option>
+	<option value="RG284">RG284</option>
+	<option value="RG285">RG285</option>
+	<option value="other">other</option>
+	</select>
+	<br>
+	<label for="Occupation">Occupation</label>
+	<select id="Occupation" name="Occupation">
+	<option value="Entrepreneur">Entrepreneur</option>
+	<option value="Self_Employed">Self_Employed</option>
+	<option value="Other">Other</option>
+	<option value="Salaried">Salaried</option>
+	</select>
+	<br>
+	<label for="Channel_Code">Channel_Code</label>
+	<select id="Channel_Code" name="Channel_Code">
+	<option value="X1">X1</option>
+	<option value="X2">X2</option>
+	<option value="X3">X3</option>
+	<option value="X4">X4</option>
+	</select>
+	<br>
+	<label for="Vintage">Vintage in months(0-200)</label>
+	<input type="text" id="Vintage" name="Vintage">
+	<br>
+	<label for="Credit_Product">Credit_Product</label>
+	<select id="Credit_Product" name="Credit_Product">
+	<option value="Yes">Yes</option>
+	<option value="No">No</option>
+	<option value="nan">NA</option>
+	</select>
+	<br>
+	<label for="Avg_Account_Balance">Avg_Account_Balance for 12 months(0-100000000)</label>
+	<input type="text" id="Avg_Account_Balance" name="Avg_Account_Balance">
+	<br>
+	<label for="Is_Active">Is_Active since last 3 months</label>
+	<select id="Is_Active" name="Is_Active">
+	<option value="Yes">Yes</option>
+	<option value="No">No</option>
+	<br>
+	<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+   <body>
+	   <br>
+       <b> <font size="+2">{{ prediction }}</b></font>
+       <br>
+   </body>
+</html>
+
