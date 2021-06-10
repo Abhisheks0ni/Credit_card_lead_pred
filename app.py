@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 # Load objects 
 
-dataframe = pickle.load(open('dataframe', 'rb'))
 stk1 = pickle.load(open('stk1', 'rb'))
 feat_map = pickle.load(open('feat_map', 'rb'))
 fe_enc = pickle.load(open('fe_enc', 'rb'))
